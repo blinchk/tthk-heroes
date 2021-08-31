@@ -8,14 +8,11 @@ namespace TthkHeroes.Models
         private static readonly Random RandomAgility = new Random();
         public Superhero(string name): base(name)
         {
-            Name = name;
             _agility = CalculateRandomAgility();
         }
         
         public Superhero(string name, string location): base(name, location)
         {
-            Name = name;
-            Location = location;
             _agility = CalculateRandomAgility();
         }
 
